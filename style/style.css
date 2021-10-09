@@ -1,0 +1,31 @@
+.calculator {
+  width: 50%;
+  height: 50%;
+  margin: 2.5% auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.calculator__input {
+  width: 100%;
+  padding: 2.5%;
+  font-size: 2.5vw;
+  text-align: right;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.calculator__keyboard .calculator__row {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.calculator__keyboard .calculator__row .calculator__button {
+  padding: 5%;
+  margin: 2.5%;
+  cursor: pointer;
+  font-size: 2.5vw;
+}
+.calculator__keyboard .calculator__row .calculator__button:hover {
+  background-color: pink;
+}

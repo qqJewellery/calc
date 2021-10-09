@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Hello World!</title>
+    <!-- styles -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reseter.css' />
+    <link rel='stylesheet' href='style/style.css'>
+    <link rel='stylesheet' href='media/media.css'>
+    <!-- styles -->
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="calculator__input" placeholder="put smth in here">
+
+        <div class="calculator__keyboard">
+            <div class="calculator__row">
+                <button class="calculator__button" onclick = 'cleanInput()'>C</button>
+                <button class="calculator__button" onclick = 'cleanInput()'>CE</button>
+                <button class="calculator__button" onclick = "adding('.')">.</button>
+            </div>
+
+            <div class="calculator__row">
+                <button class="calculator__button" onclick="adding('1')">1</button>
+                <button class="calculator__button" onclick="adding('2')">2</button>
+                <button class="calculator__button" onclick="adding('3')">3</button>
+            </div>
+
+            <div class="calculator__row">
+                <button class="calculator__button" onclick="adding('4')">4</button>
+                <button class="calculator__button" onclick="adding('5')">5</button>
+                <button class="calculator__button" onclick="adding('6')">6</button>
+            </div>
+
+            <div class="calculator__row">
+                <button class="calculator__button" onclick="adding('7')">7</button>
+                <button class="calculator__button" onclick="adding('8')">8</button>
+                <button class="calculator__button" onclick="adding('9')">9</button>
+            </div>
+
+            <div class="calculator__row">
+                <button class="calculator__button" onclick="adding('0')">0</button>
+                <button class="calculator__button" onclick="adding('+')">+</button>
+                <button class="calculator__button" onclick="adding('-')">-</button>
+            </div>
+
+            <div class="calculator__row">
+                <button class="calculator__button" onclick="adding('*')">*</button>
+                <button class="calculator__button" onclick="adding('/')">÷</button>
+                <button class="calculator__button" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
